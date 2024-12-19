@@ -62,9 +62,22 @@ namespace gitFeladatok
             return paratlanok;
         }
 
+        static void f05(int[] tomb)
+        {
+            Console.WriteLine($"Ennyi darab pozitiv szam van a tombben: {f02()}");
+            Console.WriteLine($"A tomb elemeinek atlaga: {f03()}");
+            Console.WriteLine($"A tombbol alkotott paratlan szamok: ");
+            foreach(int item in f04(tomb))
+            {
+                Console.WriteLine(item);
+                Console.WriteLine();
+            }
+        }
+
 
         static void Main(string[] args)
         {
+
         }
     }
 }
