@@ -64,8 +64,8 @@ namespace gitFeladatok
 
         static void f05(int[] tomb)
         {
-            Console.WriteLine($"Ennyi darab pozitiv szam van a tombben: {f02()}");
-            Console.WriteLine($"A tomb elemeinek atlaga: {f03()}");
+            Console.WriteLine($"Ennyi darab pozitiv szam van a tombben: {f02(tomb)}");
+            Console.WriteLine($"A tomb elemeinek atlaga: {f03(tomb)}");
             Console.WriteLine($"A tombbol alkotott paratlan szamok: ");
             foreach(int item in f04(tomb))
             {
@@ -77,7 +77,9 @@ namespace gitFeladatok
 
         static void Main(string[] args)
         {
-
+            int[] szamok = new int[10];
+            f01(szamok);
+            f05(szamok);
         }
     }
 }
