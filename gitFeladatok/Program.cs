@@ -32,6 +32,17 @@ namespace gitFeladatok
             return szamlalo;
         }
 
+        static double f03(int[] tomb)
+        {
+            double atlag = 0;
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                atlag += tomb[i];
+
+            }
+            return atlag / tomb.Length;
+        }
+
 
         static void Main(string[] args)
         {
