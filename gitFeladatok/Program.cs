@@ -14,9 +14,25 @@ namespace gitFeladatok
         {
             for(int i = 0; i < tomb.Length; i++)
             {
-                tomb[i] = rnd.Next(1,51); // test
+                tomb[i] = rnd.Next(1,51);
             }
         }
+
+        static int f02(int[] tomb)
+        {
+            int szamlalo = 0;
+            for(int i = 0;i < tomb.Length;i++)
+            {
+                if (tomb[i] % 2 == 0)
+                {
+                    szamlalo++;
+
+                }
+            }
+            return szamlalo;
+        }
+
+
         static void Main(string[] args)
         {
         }
